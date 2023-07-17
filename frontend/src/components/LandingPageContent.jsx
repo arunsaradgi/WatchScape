@@ -12,6 +12,7 @@ import LionsgatePlay from "../assets/imgs/LionsgatePlay.jpg";
 import Mubi from "../assets/imgs/Mubi.jpg";
 import Stingray from "../assets/imgs/Stingray.png";
 import Vrott from "../assets/imgs/Vrott.png";
+
 //----------------------content starts
 const LandingPageContent = () => {
   return (
