@@ -25,15 +25,9 @@ const NavbarLanding = () => {
 
   return (
     <Flex
-      overflow={"hidden"}
       justifyContent={"center"}
       m={"10px"}
       alignItems={"center"}
-      display={"block"}
-      position={"absolute"}
-      top={"0"}
-      left={"0"}
-      right={"0"}
       width={"100%"}
     >
       <Menu isOpen={isOpen} w={"80px"}>

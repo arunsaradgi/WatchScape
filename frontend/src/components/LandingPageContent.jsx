@@ -101,6 +101,14 @@ const LandingPageContent = () => {
           <Image src={Vrott} />
         </SimpleGrid>
       </SimpleGrid>
+      <SimpleGrid columns={2} spacing={10}>
+        <Image
+          boxSize="100px"
+          objectFit="cover"
+          src="https://bit.ly/dan-abramov"
+          alt="Dan Abramov"
+        />
+      </SimpleGrid>
     </div>
   );
 };
