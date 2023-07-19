@@ -22,10 +22,20 @@ const NavbarLanding = () => {
   const dropDown2Disclosure = useDisclosure();
   const dropDown3Disclosure = useDisclosure();
   const dropDown4Disclosure = useDisclosure();
-  const dropDownProfileDisclosure = useDisclosure();
 
   return (
-    <Flex justifyContent={"center"} m={"10px"} alignItems={"center"}>
+    <Flex
+      overflow={"hidden"}
+      justifyContent={"center"}
+      m={"10px"}
+      alignItems={"center"}
+      display={"block"}
+      position={"absolute"}
+      top={"0"}
+      left={"0"}
+      right={"0"}
+      width={"100%"}
+    >
       <Menu isOpen={isOpen} w={"80px"}>
         <MenuButton
           variant="ghost"
@@ -74,7 +84,9 @@ const NavbarLanding = () => {
           <MenuItem>Channels</MenuItem>
         </MenuList>
       </Menu>
-      <Button variant={"ghost"}>Live TV</Button>
+      <Button variant={"ghost"} bgColor={"green.600"}>
+        Live TV
+      </Button>
       <Menu isOpen={dropDown3Disclosure.isOpen} w={"80px"}>
         <MenuButton
           variant="ghost"
@@ -113,7 +125,9 @@ const NavbarLanding = () => {
       <Button variant={"ghost"}>
         <Search2Icon />
       </Button>
-      <Button variant={"ghost"}>Try for Free</Button>
+      <Button variant={"ghost"} bgColor={"green.600"}>
+        Try for Free
+      </Button>
       <Menu isOpen={dropDown4Disclosure.isOpen} w={"80px"}>
         <MenuButton
           variant="ghost"
@@ -144,28 +158,7 @@ const NavbarLanding = () => {
           </MenuList>
         </MenuButton>
       </Menu>
-
-      <Menu isOpen={dropDownProfileDisclosure.isOpen} w={"80px"}>
-        <MenuButton
-          variant="ghost"
-          mx={1}
-          py={[1, 2, 2]}
-          px={4}
-          borderRadius={5}
-          _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
-          aria-label="Courses"
-          fontWeight="normal"
-          onMouseEnter={dropDownProfileDisclosure.onOpen}
-          onMouseLeave={dropDownProfileDisclosure.onClose}
-        >
-          <BiSolidUserCircle />
-          <MenuList minWidth="unset">
-            <MenuItem>Sign In</MenuItem>
-            <MenuItem>Help</MenuItem>
-            <MenuItem>Watch Anywhere</MenuItem>
-          </MenuList>
-        </MenuButton>
-      </Menu>
+      <Button bgColor={"green.600"}>Login</Button>
     </Flex>
   );
 };
