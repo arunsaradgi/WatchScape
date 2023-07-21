@@ -106,19 +106,13 @@ const LandingPageContent = () => {
       <SimpleGrid
         columns={2}
         spacing={10}
-        h={"400px"}
+        h={"500px"}
         w={"90%"}
         margin={"auto"}
         mt={"30px"}
         mb={"30px"}
       >
-        <Image
-          m={"auto"}
-          objectFit="cover"
-          src={kidsProfile}
-          alt="Dan Abramov"
-          padding={"20px"}
-        />
+        <Image src={kidsProfile} alt="kidsProfile" m={"auto"} />
         <VStack justifyContent={"center"} alignItems={"center"}>
           <Heading fontSize={"7vh"}>Create profiles for kids</Heading>
           <Text fontSize={"4vh"}>

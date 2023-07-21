@@ -9,7 +9,7 @@ export const AllRoutes = () => {
       <Routes>
         <Route path={"/"} element={<Landing />} />
 
-        <Route path={"/*"} element={<ErrorPage />} />
+        <Route path={"*"} element={<ErrorPage />} />
       </Routes>
     </>
   );
