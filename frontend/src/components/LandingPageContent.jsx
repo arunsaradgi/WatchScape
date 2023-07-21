@@ -7,6 +7,7 @@ import {
   Text,
   Input,
   Button,
+  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import curios from "../assets/imgs/426x294_CuriosityStream.png";
@@ -22,6 +23,7 @@ import Mubi from "../assets/imgs/Mubi.jpg";
 import Stingray from "../assets/imgs/Stingray.png";
 import Vrott from "../assets/imgs/Vrott.png";
 import { color } from "framer-motion";
+import kidsProfile from "../assets/imgs/kidsProfile.png";
 
 //----------------------content starts
 const LandingPageContent = () => {
@@ -101,13 +103,29 @@ const LandingPageContent = () => {
           <Image src={Vrott} />
         </SimpleGrid>
       </SimpleGrid>
-      <SimpleGrid columns={2} spacing={10}>
+      <SimpleGrid
+        columns={2}
+        spacing={10}
+        h={"400px"}
+        w={"90%"}
+        margin={"auto"}
+        mt={"30px"}
+        mb={"30px"}
+      >
         <Image
-          boxSize="100px"
+          m={"auto"}
           objectFit="cover"
-          src="https://bit.ly/dan-abramov"
+          src={kidsProfile}
           alt="Dan Abramov"
+          padding={"20px"}
         />
+        <VStack justifyContent={"center"} alignItems={"center"}>
+          <Heading fontSize={"7vh"}>Create profiles for kids</Heading>
+          <Text fontSize={"4vh"}>
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </Text>
+        </VStack>
       </SimpleGrid>
     </div>
   );
