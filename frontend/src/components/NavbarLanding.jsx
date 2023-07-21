@@ -1,21 +1,18 @@
 import React from "react";
 import {
-  Box,
   Button,
   Flex,
-  GridItem,
   Heading,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Select,
   SimpleGrid,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon, Search2Icon } from "@chakra-ui/icons";
-import { BiSolidUserCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const NavbarLanding = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -152,7 +149,9 @@ const NavbarLanding = () => {
           </MenuList>
         </MenuButton>
       </Menu>
-      <Button bgColor={"green.600"}>Login</Button>
+      <Button bgColor={"green.600"}>
+        <Link to={"/login"}>Login</Link>
+      </Button>
     </Flex>
   );
 };
